@@ -72,10 +72,10 @@ button:focus-visible {
   align-items: center;
 }
 .container {
-  height: 450px;
+  height: 500px;
   width: 900px;
-  background-color: pink;
-  border: 5px solid black;
+  background-image: linear-gradient(pink, coral);
+  border: 5px solid rgb(182, 181, 181);
   margin-top: 20px;
   padding-top: 10px;
   padding-bottom: 40px;
@@ -91,12 +91,32 @@ button:focus-visible {
   gap: 8px;
 }
 
+.search-icon {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  height: 36px;
+  width: 42px;
+  border: 2px solid gold;
+}
+
+.search-icon:hover {
+  cursor: pointer;
+}
+
 .search-bar input {
-  height: 15px;
+  height: 16px;
   width: 250px;
   border-radius: 40px;
   font-size: 20px;
   padding: 10px;
+  border-color: gold;
+}
+
+.search-bar input:hover {
+  cursor: pointer;
 }
 
 .temperature-container {
@@ -113,10 +133,20 @@ button:focus-visible {
   font-weight: 450;
 }
 
+.description {
+  font-size: 20px;
+  font-weight: 800;
+  color: brown;
+}
+
 .hum-wind-container {
   margin-top: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 52px;
+}
+
+body {
+  background-image: linear-gradient(red, yellow);
 }
